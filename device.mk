@@ -340,6 +340,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp
 
+PRODUCT_PROPERTY_OVERRIDES += \
+	media.stagefright.legacyencoder=true \
+	media.stagefright.less-secure=true
+
 # Request modem to send PLMN name always irrespective
 # of display condition in EFSPN.
 # RIL uses this property.
